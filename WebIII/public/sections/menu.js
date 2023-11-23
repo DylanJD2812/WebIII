@@ -4,7 +4,7 @@ class Menu extends HTMLElement{
         this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="images/logo/northwind_T.png" alt="" width="65%"  class="d-inline-block align-text-top">
+            <img src="images/logo/libro.png" alt="" width="15%"  class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,6 +19,9 @@ class Menu extends HTMLElement{
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="suppliers.html">Proveedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.pdfs.html">Sección PDF</a>   
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="customers.html#">Clientes</a>

@@ -72,3 +72,14 @@ body {
     ;
     width: 33%;
 }
+
+.contenedor-articles {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contenedor-articles article {
+    width: 450px;
+    text-align: justify;
+  }
+  
