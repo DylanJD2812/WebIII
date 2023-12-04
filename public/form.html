@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Form</title>
+  <link rel="stylesheet" href="css/form-styles.css">
+</head>
+<body>
+    
+  <h1>Formulario de Investigación</h1>
+  
+  <form id="investigation-form">
+    <div class="form-group">
+      <label for="title">Escriba el título de la investigación:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+
+    <div class="form-group">
+      <label for="area">Área de interés:</label>
+      <input type="text" id="area" name="area" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Breve descripción del tema (Max 500 caracteres):</label>
+      <textarea id="description" name="description" maxlength="500" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="pdf">Documento PDF (investigación):</label>
+      <input type="file" id="pdf" name="pdf" accept="application/pdf" required>
+    </div>
+
+    <div class="form-group">
+      <label for="images">4 a 6 Max de imágenes relacionadas con el tema de estudio:</label>
+      <input type="file" id="images" name="images" accept="image/*" multiple required>
+    </div>
+
+    <div class="form-group">
+      <label for="conclusions">Conclusiones del trabajo (Max 500 caracteres):</label>
+      <textarea id="conclusions" name="conclusions" maxlength="500" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="recommendations">Recomendaciones finales (500 caracteres):</label>
+      <textarea id="recommendations" name="recommendations" maxlength="500" required></textarea>
+    </div>
+
+    <button type="submit">Enviar Formulario</button>
+  </form>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
+<h1>El registro y el login si funcionan</h1>
+<button id="addButton">Agregar Investigación</button>
+        <!-- Popup para agregar investigación -->
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="addPopup">
+            <h3>Agregar Investigación</h3>
+            <input type="text" id="titleInput" placeholder="Título de la Investigación" required>
+            <input type="text" id="areaInput" placeholder="Área de Interés" required>
+            <textarea id="descriptionInput" placeholder="Descripción Breve" maxlength="500" required></textarea>
+            <input type="file" id="pdfInput" accept=".pdf">
+            <button id="saveButton">Guardar</button>
+            <button id="cancelButton">Cancelar</button>
+
+        </div>
