@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/style_01.css">
     <link rel="stylesheet" href="styleindex.css">
 
+
     <!-- References Firebase libraries -->
     <!-- Update the version number as needed -->
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
@@ -42,17 +43,25 @@
         <h1 style="margin-bottom: 50px; text-align: center;">Investigaciones Académicas</h1>
         <section>
             <h2>Lista de Investigaciones</h2>
-            <table id="investigationsTable" class="table">
-                <thead>
-                    <tr>
+            <select id="area">
+                <option value="Biología">Biología</option>
+                <option value="Química">Química</option>
+                <option value="Matematica">Matematica</option>
+                <option value="Ambiente">Ambiente</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Artes">Artes</option>
+            </select> <input type="button" class=" btn btn-danger btn-sm" value="X" id="btnReset"> <br /><br />
+            <input type="button" value="Buscar" id="btnBuscar">
+            <table id="investigationsTable" class="table table-hover table-bordered">
+                <thead><tr>
                         <th>Título de la Investigación</th>
                         <th>Área de Interés</th>
-                    </tr>
-                </thead>
+                        <th>Autor(a)</th>
+                    </tr></thead>
+
                 <tbody id="tabla">
                     <!-- Las filas de la tabla se agregarán aquí dinámicamente -->
-                </tbody>
-            </table>
+                </tbody></table>
         </section>
     </main>
     
@@ -66,6 +75,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     <!-- Main script that contains the popup functionality -->
-    <script src="js/inv/inde.js"></script>
+    <script defer src="js/inv/inde.js"></script>
 </body>
 </html>

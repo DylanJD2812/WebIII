@@ -1,7 +1,7 @@
 class Menu extends HTMLElement{
     constructor(){
         super();
-        this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-dark bg-success bg-gradient fixed-top">
         <div class="container-fluid">
              <a class="navbar-brand"><img src="images/logo/libro.png" alt="" width="15%"  class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -33,7 +33,8 @@ class Menu extends HTMLElement{
                 </ul>
             </div>
         </div>
-    </nav>` 
+    </nav>
+    <br/><br/>` 
     }     
 }
 

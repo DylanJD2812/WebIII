@@ -48,24 +48,29 @@
             <div class="row">
                 <div class="col">
                     <input type="text" id="title" name="title" required placeholder="Título de la investigación" size="35"><br><br>
-                    <label for="txtElemento">Area de Interés:</label><br />
+                    <label for="area">Area de Interés:</label><br/>
                     <select id="area">
                         <option value="Biología">Biología</option>
                         <option value="Química">Química</option>
                         <option value="Matematica">Matematica</option>
                         <option value="Ambiente">Ambiente</option>
+                        <option value="Tecnología">Tecnología</option>
+                        <option value="Artes">Artes</option>
                     </select> <br /><br />
                     <label for="pdf">Documento PDF (investigación):</label><br>
                     <input type="file" id="pdf" name="pdf" accept="application/pdf" required><br><br>
-                    <label for="images">4 a 6 Max de imágenes relacionadas con el tema de estudio:</label><br>
-                    <input type="file" id="images" name="images" accept="image/*" multiple required><br><br>
+                    <label for="image1">4 imágenes relacionadas con la investigación:</label><br>
+                    <input type="file" id="image1" class="FileU" accept="image/" required><br><br>
+                    <input type="file" id="image2" class="FileU" accept="image/" required><br><br>
+                    <input type="file" id="image3" class="FileU" accept="image/" required><br><br>
+                    <input type="file" id="image4" class="FileU" accept="image/" required><br><br>
+                    <a id="PryUpload" class="btn btn-primary">Enviar Formulario</a>
                   </div>
                   <div class="col">
                     <textarea id="description" name="description" maxlength="500" required placeholder="Descripción del tema (Max 500 caracteres)" rows="8" cols="50"></textarea><br><br>
                     <textarea id="conclusions" name="conclusions" maxlength="500" required placeholder="Conclusiones del trabajo (Max 500 caracteres)" rows="8" cols="50"></textarea><br><br>
                     <textarea id="recommendations" name="recommendations" maxlength="500" required placeholder="Recomendaciones finales (500 caracteres)" rows="8" cols="50"></textarea>
                   </div>
-          <button type="submit" class="btn btn-primary">Enviar Formulario</button>
         </form>
     </main>
     
@@ -79,6 +84,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     <!-- Main script that contains the popup functionality -->
-    <script src="js/inv/form.js"></script>
+    <script defer src="js/inv/form.js"></script>
 </body>
 </html>
